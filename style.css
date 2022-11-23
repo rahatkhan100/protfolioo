@@ -1,0 +1,40 @@
+.grid {
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+      display:flex;
+      flex-wrap:wrap;
+    list-style: none;
+    position: absolute;
+    
+  }
+  .destinations{
+       width:100%;
+      display:flex;	flex-wrap:wrap;
+  }
+  
+  .destinations .grid li {
+      height:600px;
+      padding:10px;
+      background-clip:content-box;
+      background-size:cover;
+  }
+  
+  .destinations .grid li.large {
+      flex-basis:40%; 
+  }
+  
+  .destinations .grid li.small {
+      flex-basis:25%;
+  }
+  .destinations .grid li.med {
+      flex-basis:35%;
+  }
+  
+  @media (max-width: 900px) {
+    .destinations .grid li {
+      height:150px;
+      padding:5px;
+    background-position: center;
+  }
+    }
